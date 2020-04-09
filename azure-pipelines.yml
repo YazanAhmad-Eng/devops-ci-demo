@@ -17,5 +17,5 @@ steps:
 
 - script: |
     echo "Hello"
-    ./build.sh
+    bash build.sh
   displayName: 'Run build test'
