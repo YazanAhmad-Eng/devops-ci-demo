@@ -12,10 +12,20 @@ pool:
 steps:
 - script: |
     echo Hello, world!
-     echo "YaZaN iS nErE"
+     echo "YaZaN iS hErE"
   displayName: 'Run a one-line script'
 
 - script: |
     echo "Hello"
     bash build.sh
   displayName: 'Run build test'
+
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'yazan0devops@13.90.20.26'
+    contents: 'web/**'
+    targetFolder: '/var/www/html'
+    cleanTargetFolder: true
+    readyTimeout: '20000'
+    failOnEmptySource: true
