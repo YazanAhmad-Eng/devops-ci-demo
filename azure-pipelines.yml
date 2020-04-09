@@ -16,6 +16,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo Learn a more about YAML
-  displayName: 'Run a multi-line script'
+    echo "Hello"
+    ./build.sh
+  displayName: 'Run build test'
