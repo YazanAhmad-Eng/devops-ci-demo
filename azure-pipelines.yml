@@ -24,7 +24,8 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'yazan0devops@13.90.20.26'
-    contents: 'web/**'
+    sourceFolder: 'web/'
+    contents: '**'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
     readyTimeout: '20000'
