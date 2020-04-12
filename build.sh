@@ -9,7 +9,7 @@ server=$HOSTNAME
 name=$USER
 timestamp=$(date +%Y-%m-%d_%H-%M-%S)
 DIR=$(pwd)
-branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 sed  "s/{SERVER_NAME}/$server/g" web/indx.txt  |sed  "s/{USER}/$name/g" >indx.txt
 sed -i "s/{TIMESTAMP}/$timestamp/g" indx.txt
