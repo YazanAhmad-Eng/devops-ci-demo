@@ -11,4 +11,4 @@ timestamp=$(date +%Y-%m-%d_%H-%M-%S)
 
 
 sed  "s/{SERVER_NAME}/$server/g" web/indx.txt  |sed  "s/{USER}/$name/g" >indx.txt
-sed -i "s/{TIMESTAMP}/$timestamp/g" >web/index.html
+sed  "s/{TIMESTAMP}/$timestamp/g" indx.txt>web/index.html
