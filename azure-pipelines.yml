@@ -25,7 +25,7 @@ steps:
   inputs:
     sshEndpoint: 'yazan0devops@13.92.225.99'
     sourceFolder: 'web/'
-    contents: 'web.index.html**'
+    contents: 'web/**'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
     readyTimeout: '20000'
