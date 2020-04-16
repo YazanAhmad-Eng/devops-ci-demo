@@ -26,7 +26,7 @@ steps:
     sshEndpoint: 'yazan0devops@13.68.215.202'
     sourceFolder: 'web/'
     contents: '**'
-    targetFolder: '/var/www/html'
+    targetFolder: '/var/www/html/dev'
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true
